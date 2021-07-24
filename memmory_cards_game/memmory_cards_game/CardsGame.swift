@@ -9,8 +9,9 @@ import Foundation
 
 class CardsGame {
     var cards = [Card]()
-    
     var indexOfOneAndOnlyFaceUpCard: Int?
+    var score = 0
+    var flip = 0
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {

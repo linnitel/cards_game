@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKs-3H-NkQ">
-                                <rect key="frame" x="93" y="734" width="205" height="51"/>
+                                <rect key="frame" x="93" y="682" width="205" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
@@ -65,6 +65,17 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <connections>
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMX-yZ-1vK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4q-73-WKb">
+                                <rect key="frame" x="203" y="44" width="70" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHV-N1-PTh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d66-Q0-u5V">
@@ -188,15 +199,23 @@
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbk-JW-bfw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4q-73-WKb">
-                                <rect key="frame" x="203" y="44" width="70" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-Mv-SqT">
+                                <rect key="frame" x="67" y="625" width="257" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVG-nj-j6J">
+                                <rect key="frame" x="96" y="753" width="199" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHV-N1-PTh"/>
+                                    <action selector="NewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmb-bq-UgD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -205,6 +224,7 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLable" destination="dKs-3H-NkQ" id="y3y-9A-II8"/>
+                        <outlet property="scoreCountLabel" destination="wEa-Mv-SqT" id="aBg-bC-NKE"/>
                         <outletCollection property="cardButtons" destination="F72-yk-3iD" collectionClass="NSMutableArray" id="JO9-5e-faq"/>
                         <outletCollection property="cardButtons" destination="x8D-9q-XcU" collectionClass="NSMutableArray" id="WOJ-Ph-G9a"/>
                         <outletCollection property="cardButtons" destination="1qm-L3-iwd" collectionClass="NSMutableArray" id="P95-n9-d8y"/>

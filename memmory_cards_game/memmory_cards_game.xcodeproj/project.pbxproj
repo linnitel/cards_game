@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E19BDE926AB3D0D0087A99A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19BDE826AB3D0D0087A99A /* Card.swift */; };
+		4E19BDEE26ABEC700087A99A /* EmojiGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19BDED26ABEC700087A99A /* EmojiGenerator.swift */; };
 		4EC8B07F26AB38FD00C5A36A /* CardsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8B07E26AB38FD00C5A36A /* CardsGame.swift */; };
 		4ED2210A26AAE72400DB5FB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2210926AAE72400DB5FB5 /* AppDelegate.swift */; };
 		4ED2210C26AAE72400DB5FB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2210B26AAE72400DB5FB5 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		4E19BDE826AB3D0D0087A99A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4E19BDED26ABEC700087A99A /* EmojiGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGenerator.swift; sourceTree = "<group>"; };
 		4EC8B07E26AB38FD00C5A36A /* CardsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGame.swift; sourceTree = "<group>"; };
 		4ED2210626AAE72400DB5FB5 /* memmory_cards_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memmory_cards_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED2210926AAE72400DB5FB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				4ED2213F26AAE83100DB5FB5 /* Supporting files */,
 				4ED2210D26AAE72400DB5FB5 /* ViewController.swift */,
+				4E19BDED26ABEC700087A99A /* EmojiGenerator.swift */,
 				4ED2210F26AAE72400DB5FB5 /* Main.storyboard */,
 				4EC8B07E26AB38FD00C5A36A /* CardsGame.swift */,
 				4E19BDE826AB3D0D0087A99A /* Card.swift */,
@@ -248,6 +251,7 @@
 			files = (
 				4ED2210E26AAE72400DB5FB5 /* ViewController.swift in Sources */,
 				4EC8B07F26AB38FD00C5A36A /* CardsGame.swift in Sources */,
+				4E19BDEE26ABEC700087A99A /* EmojiGenerator.swift in Sources */,
 				4E19BDE926AB3D0D0087A99A /* Card.swift in Sources */,
 				4ED2210A26AAE72400DB5FB5 /* AppDelegate.swift in Sources */,
 				4ED2210C26AAE72400DB5FB5 /* SceneDelegate.swift in Sources */,
