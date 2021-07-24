@@ -12,11 +12,6 @@ class ViewController: UIViewController {
     lazy var game = CardsGame(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
     lazy var emojiGenerator = EmojiGenerator()
     
-    var flipCount = 0 {
-        didSet {
-            flipCountLable.text = "Flips: \(flipCount)"
-        }
-    }
     @IBOutlet var cardButtons: [UIButton]!
     
     @IBOutlet weak var flipCountLable: UILabel!
@@ -26,11 +21,9 @@ class ViewController: UIViewController {
         emojiGenerator = EmojiGenerator()
         game = CardsGame(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
         updateViewFromModel()
-        flipCount = 0
     }
     
     @IBAction func touchCard(_ sender: UIButton) {
-        flipCount += 1
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
@@ -52,6 +45,8 @@ class ViewController: UIViewController {
                 button.backgroundColor = card.isMatched ? UIColor.clear : UIColor.orange
             }
         }
+        flipCountLable.text = "Flips: \(game.flip)"
+        scoreCountLabel.text = "Score: \(game.score)"
     }
 }
 
