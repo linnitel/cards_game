@@ -14,8 +14,8 @@ class CardsGame {
     var flip = 0
     
     func chooseCard(at index: Int) {
-        flip += 1
         if !cards[index].isMatched {
+            flip += 1
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
